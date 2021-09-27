@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src="https://i.imgur.com/RivopOE.png" className="App-logo" alt="logo" />
+        <img src="https://i.imgur.com/Xh8w5dP.png" className="App-logo" alt="logo" />
         <a
           className="App-link"
           href="https://reactjs.org"
