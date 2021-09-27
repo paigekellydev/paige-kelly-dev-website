@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Favicon from 'react-favicon'
 
 ReactDOM.render(
   <React.StrictMode>
+    <Favicon url="https://i.imgur.com/RivopOE.png"/>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
