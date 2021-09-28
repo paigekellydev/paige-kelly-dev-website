@@ -7,7 +7,7 @@ export default function Loading() {
             <span></span>
             <span></span>
             <span></span>
-            <img src="https://i.imgur.com/Xh8w5dP.png" className="App-logo" alt="logo" />
+            <img src="https://i.imgur.com/8YS2MSr.png" className="App-logo" alt="logo" />
         </div>
     )
 }

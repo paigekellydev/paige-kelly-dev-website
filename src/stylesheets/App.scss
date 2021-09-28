@@ -1,7 +1,12 @@
 $brown-color: #72432E;
 $grey-color: #BAB1A2;
 
+body {
+    background-color: black;
+}
+
 #loading {
+    // background-color: white;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -13,6 +18,38 @@ $grey-color: #BAB1A2;
 	text-decoration: none;
 	box-shadow: 0 20px 50px rgba(255,255,255,0.05);
 	overflow: hidden;
+
+    img {
+        width:10rem;
+        -webkit-animation: flickerAnimation 1s infinite;
+        -moz-animation: flickerAnimation 2s infinite;
+        -o-animation: flickerAnimation 3s infinite;
+        animation: flickerAnimation 4s infinite;
+    
+        @keyframes flickerAnimation {
+            0%   { opacity:0; }
+            50%  { opacity:1; }
+            100% { opacity:0; }
+        }
+
+        @-o-keyframes flickerAnimation {
+            0%   { opacity:0; }
+            50%  { opacity:1; }
+            100% { opacity:0; }
+        }
+
+        @-moz-keyframes flickerAnimation {
+            0%   { opacity:0; }
+            50%  { opacity:1; }
+            100% { opacity:1; }
+        }
+
+        @-webkit-keyframes flickerAnimation {
+            0%   { opacity:0; }
+            50%  { opacity:1; }
+            100% { opacity:1; }
+        }
+    }
 
     :before {
         position: absolute;
