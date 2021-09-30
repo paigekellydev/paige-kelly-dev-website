@@ -1,4 +1,5 @@
 import React from 'react'
+import '../stylesheets/Loading.css';
 
 export default function Loading() {
     return (
