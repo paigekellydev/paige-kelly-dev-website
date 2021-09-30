@@ -118,6 +118,7 @@ body {
   height: 2px;
   background: linear-gradient(to left, #72432E, #BAB1A2);
   animation: animate3 4s linear infinite;
+  animation-delay: 2s;
 }
 @keyframes animate3 {
   0% {
