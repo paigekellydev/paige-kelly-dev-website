@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import '../src/stylesheets/App.css';
 import Loading from './components/Loading';
 import NavBar from './components/NavBar';
-import WhatIKnow from './components/WhatIKnow';
+import Menu from './components/Menu';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         {/* <img src="https://i.imgur.com/Xh8w5dP.png" className="App-logo" alt="logo" /> */}
         <Loading />
         <NavBar />
-        <WhatIKnow />
+        <Menu />
       </header>
     </div>
   );
