@@ -3,6 +3,7 @@ import '../src/stylesheets/App.css';
 import Loading from './components/Loading';
 import NavBar from './components/NavBar';
 import Menu from './components/Menu';
+import Bio from './components/Bio';
 import { useState } from 'react'
 
 function App() {
@@ -23,9 +24,10 @@ function App() {
       <header className="App-header">
         {/* <img src="https://i.imgur.com/Xh8w5dP.png" className="App-logo" alt="logo" /> */}
         {/* <Loading stopLoading={stopLoading}/> */}
-        {loadingComponent()}
         <NavBar />
         <Menu />
+        <Bio  />
+        {loadingComponent()}
       </header>
     </div>
   );
