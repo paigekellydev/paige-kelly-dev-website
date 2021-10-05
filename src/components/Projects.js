@@ -5,6 +5,8 @@ export default function Projects() {
 
     
     const displayProjects = () => {
+
+        // Need to create backend to store and save project information
         const projects = [
             {
                 name: "MyCue",
