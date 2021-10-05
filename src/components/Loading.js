@@ -1,9 +1,9 @@
 import React from 'react'
 import '../stylesheets/Loading.css';
 
-export default function Loading() {
+export default function Loading({stopLoading}) {
     return (
-        <div id="loading">
+        <div onClick={stopLoading} id="loading">
             <span></span>
             <span></span>
             <span></span>

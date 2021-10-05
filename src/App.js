@@ -3,13 +3,27 @@ import '../src/stylesheets/App.css';
 import Loading from './components/Loading';
 import NavBar from './components/NavBar';
 import Menu from './components/Menu';
+import { useState } from 'react'
 
 function App() {
+
+  const [displayLoading, setDisplayLoading] = useState({displayLoading: true})
+
+  const stopLoading = (event) => {
+    event.preventDefault()
+    setDisplayLoading(false)
+  }
+
+  const loadingComponent = () => {
+    return displayLoading ? <Loading stopLoading={stopLoading}/> : null
+  }
+
   return (
     <div className="App">
       <header className="App-header">
         {/* <img src="https://i.imgur.com/Xh8w5dP.png" className="App-logo" alt="logo" /> */}
-        <Loading />
+        {/* <Loading stopLoading={stopLoading}/> */}
+        {loadingComponent()}
         <NavBar />
         <Menu />
       </header>
