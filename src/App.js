@@ -4,6 +4,7 @@ import Loading from './components/Loading';
 import NavBar from './components/NavBar';
 import Menu from './components/Menu';
 import Bio from './components/Bio';
+import Projects from './components/Projects';
 import { useState } from 'react'
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <NavBar />
         <Menu />
         <Bio  />
+        <Projects />
         {loadingComponent()}
       </header>
     </div>
